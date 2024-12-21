@@ -215,6 +215,7 @@ html{
 
 }
 
+/* The content part of the main__section */
 .main__section-content{
     display:flex;
     flex-direction:column;
