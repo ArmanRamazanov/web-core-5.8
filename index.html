@@ -17,44 +17,44 @@
             <!-- Hamburger button and logo wrapper -->
             <div class="header__container-column-left">
                 <div class="header__container-column-button">
-                    <button class="button header__hamburger-button header__button-hamburger--pink" title="hamburger menu">
-                        <img src="images/hamburger-menu.svg" alt="hamburger menu image">
+                    <button class="button header__hamburger-button button--theme-pink" aria-label="Открыть меню">
+                        <img src="images/hamburger-menu.svg" alt="" aria-hidden="true">
                     </button>
                 </div>
                 <a class="link header__logo" title="logo">
-                    <img class="header__logo-image" src="images/logo.svg" alt="logo image">
+                    <img class="header__logo-image" src="images/logo.svg" alt="" aria-hidden="true">
                 </a>
             </div>
 
             <!--The secondary list that appears on 768px breakpoint  -->
-            <ul role="list" class="list header__menu header__menu--secondary" title="interaction menu">
+            <ul role="list" class="list header__menu header__menu--secondary">
                 <li class="header__menu-item">
-                    <button class="button header__menu-button header__menu-button--pink">
-                        <img src="images/call.svg" alt="call">
+                    <button class="button header__menu-button button--theme-pink" aria-label="Позвонить">
+                        <img src="images/call.svg" alt="" aria-hidden="true">
                     </button>
                 </li>
                 <li class="header__menu-item">
-                    <button class="button header__menu-button header__menu-button--pink">
-                        <img src="images/chat.svg" alt="chat">
+                    <button class="button header__menu-button button--theme-pink" aria-label="Написать">
+                        <img src="images/chat.svg" alt="" aria-hidden="true">
                     </button>
                 </li>
                 <li class="header__menu-item">
-                    <button class="button header__menu-button header__menu-button--pink">
-                        <img src="images/profile.svg" alt="profile">
+                    <button class="button header__menu-button button--theme-pink" aria-label="Профиль">
+                        <img src="images/profile.svg" alt="" aria-hidden="true">
                     </button>
                 </li>
             </ul>
 
             <!-- Main List -->
-            <ul role="list" class="list header__menu header__menu--primary" title="interaction menu">
+            <ul role="list" class="list header__menu header__menu--primary">
                 <li class="header__menu-item">
-                    <button class="button header__menu-button header__menu-button--pink">
-                        <img src="images/repair.svg" alt="repair">
+                    <button class="button header__menu-button button--theme-pink" aria-label="Починить">
+                        <img src="images/repair.svg" alt="" aria-hidden="true">
                     </button>
                 </li>
                 <li class="header__menu-item">
-                    <button class="button header__menu-button header__menu-button--pink">
-                        <img src="images/check-status.svg" alt="check status">
+                    <button class="button header__menu-button button--theme-pink" aria-label="Статус ремонта">
+                        <img src="images/check-status.svg" alt="" aria-hidden="true">
                     </button>
                 </li>
             </ul>
@@ -68,12 +68,31 @@
 
             <!-- Section -->
             <section class="section main__section">
-                <h1 class="heading main__section-heading" title="header">
-                    Услуги и сервисы
-                </h1>
+                <header class="main__section-header">
+                    <h1 class="heading main__section-heading">
+                        Услуги и сервисы
+                    </h1>
+    
+                    <!--contact us buttons in the main section-->
+                    <div class="main__section-contact-us-buttons">
+                        <div class="main__section-contact-us-buttons-contact">
+                            <span>Оставить заявку</span>
+                            <button class="button button--theme-pink" aria-label="Оставить заявку">
+                                <img src="images/repair.svg">
+                            </button>
+                        </div>
+    
+                        <div class="main__section-contact-us-buttons-check-status">
+                            <span>Статус ремонта</span>
+                            <button class="button button--theme-pink" aria-label="Статус ремонта">
+                                <img src="images/check-status.svg">
+                            </button>
+                        </div>
+                    </div>
+                </header>
 
                 <!-- Our services list -->
-                <ul role="list" class="list main__section-list" title="our services">
+                <ul role="list" class="list main__section-list">
                     <li class="main__section-list-item">
                         <button class="button main__section-list-button main__section-list-button--active">
                             Ремонтируемые устройства
@@ -114,7 +133,7 @@
                                   Мы гордимся тем, что к нам обращаются по рекомендациям и, в свою очередь, советуют нас родным и близким.
                             </span>
                         </p> 
-                        <button class="button main__section-content-button-read-more" title="read more button">
+                        <button class="button main__section-content-button-read-more">
                             <img src="images/read-more-icon.svg">
                             <span class="main__section-content-button-text">Читать далее</span>
                         </button>
@@ -122,7 +141,7 @@
 
                     <!-- The wrapper of the image -->
                     <div class="main__section-content-column">
-                        <img src="images/main__section-image.png" alt="Our company Image" class="main__section-content-image">
+                        <img src="images/main__section-image.png" alt="Наша компания" class="main__section-content-image">
                     </div>
                 </div>
             </section>

@@ -53,6 +53,7 @@ html{
     flex-direction:column;
     padding:0;
     min-width:320px;
+    overflow-x:hidden;
 }
 
 /*Main styles*/
@@ -70,7 +71,6 @@ html{
     flex-direction:row;
     justify-content:space-between;
     min-width:320px;
-    max-width:1400px;
     padding: 1.5rem 1rem;
     margin:0 auto;
     position:relative;
@@ -110,8 +110,7 @@ html{
     border-right:2px solid var(--clr-grey-500);
 }
 
-.header__button-hamburger--pink,
-.header__menu-button--pink{
+.button--theme-pink{
     width:40px;
     height:40px;
     background-color: var(--clr-pink);
@@ -152,9 +151,15 @@ html{
 .main__section{
     width:100%;
     height:100%;
-    max-width:1400px;
     min-width:320px;
     margin:0 auto;
+}
+
+.main__section-header{
+    display:flex;
+    flex-direction:row;
+    justify-content:space-between;
+    padding-top:2rem;
 }
 
 .main__section-heading{
@@ -163,6 +168,15 @@ html{
     font-family:TTLakesBold;
     font-size:var(--fs-28px);
     border-left:4px solid var(--clr-green-900);
+}
+
+.main__section-contact-us-buttons{
+    display:inline-flex;
+    flex-direction:row;
+    gap:20px;
+    display:none;
+    padding-top:1rem;
+    padding-right:1rem;
 }
 
 .main__section-list{
@@ -209,10 +223,8 @@ html{
     color:var(--clr-grey-900)
 }
 
-/*The active item of the item in the list*/
 .main__section-list-button--active{
     box-shadow:0 0 0px 3px var(--clr-green-500) inset;
-
 }
 
 /* The content part of the main__section */
@@ -222,7 +234,6 @@ html{
     width:100%;
     padding-top:1rem;
     margin:0 auto;
-    max-width:480px;
 }
 
 .main__section-content-column--descriptive{
@@ -278,7 +289,7 @@ html{
 
 @media(min-width:500px){
     .main__section-content-column--descriptive{
-        padding:0;
+        margin:0 auto;
     }
 
     .main__section-content-image{
@@ -289,7 +300,6 @@ html{
 @media(min-width:768px){
     .main__section-content{
         padding:1.5rem 1rem;
-        max-width:1400px;
         flex-direction:row;
         gap:1rem;
     }
@@ -327,11 +337,17 @@ html{
     }
 }
 
-@media(min-width:1500px){
-    .header__container{
-        padding-left:0;
-        padding-right:0;
+@media(min-width:1120px){
+    .main__section-contact-us-buttons{
+        display:inline-flex;
     }
+
+    .header{
+        display:none;
+    }
+}
+
+@media(min-width:1500px){
     .main__section-content{
         gap:2rem;
     }
